@@ -19,9 +19,11 @@ int main(int argc, char *argv[])
 	else std::cout << "closed";
 	std::cout << "\n\n";
 
-	my_serial.write('\2', 1);
-	my_serial.write('\3', 1);
-	my_serial.write('\0', 1);
+	my_serial.write("s");
+
+	//my_serial.write('\2', 1);
+	//my_serial.write('\3', 1);
+	//my_serial.write('\0', 1);
 
 	std::string buffer;
 	my_serial.readline(buffer);
